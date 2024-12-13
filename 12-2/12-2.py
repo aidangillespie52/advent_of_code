@@ -8,13 +8,13 @@ def check_report(report):
 
         if diff > 0:
             asc = True
-            # If the difference is over limit return false
+            # If the difference is over limit return False
             if diff > 3:
                 return 0
 
         elif diff < 0:
             desc = True
-            # If the difference is over limit return false
+            # If the difference is over limit return False
             if diff < -3:
                 return 0
         else:
@@ -24,7 +24,7 @@ def check_report(report):
         if desc and asc:
             return 0
     
-    # If we never encountered a condition that the report is false then must be True
+    # If we never encountered a condition that the report is False then must be True
     return 1
 
 def check_report_dampen(report):
